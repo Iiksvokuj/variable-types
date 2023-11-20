@@ -15,4 +15,5 @@ trip_people_list = me_and_my_friend.union(
 trip_people_list = trip_people_list.difference(people_to_exclude)
 
 print(len(trip_people_list), "are going along")
-print(trip_people_list)
+for participant in trip_people_list:
+    print(participant)
