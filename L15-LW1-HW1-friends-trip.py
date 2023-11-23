@@ -1,4 +1,4 @@
-me_and_my_friend       = {"Dorin", "Radjamhathaprajapatijaayeshkumar"}
+me_and_my_friend       = {"Dorin", "Radj"}
 
 my_friends             = ["John", "Marry", "Jane"]
 my_best_friend_friends = ("Marry", "Pete", "Oliver", "Mia")
@@ -16,6 +16,7 @@ while True:
 #    people_to_exclude.discard("Nobody")
     people_to_exclude.add(exclude_name)
     if exclude_name == "":
+        people_to_exclude.discard("")
         break
 system('cls')
 
@@ -45,6 +46,6 @@ for participant in range(len(trip_people_list)):
     print(participant+1,") ", trip_people_list[participant])
 
 print()
-print(len(people_to_exclude)-1, "won't go:")
+print(len(people_to_exclude), "won't go:")
 for name in people_to_exclude:
-    print(name)
+    print("* ) ",name)
